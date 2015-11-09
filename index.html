@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Angular Eval 1</title>
+    <link rel="stylesheet" href="css/main.css">
+    <!-- Dépôts CDN de Angular -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.7/angular.min.js"></script>
+    <script src="app/app.js"></script>
+  </head>
+  <body ng-app="myApp">
+    <div ng-controller="MyCtrl">    
+        <form  ng-submit="ajouterEleve()">
+            <input type="text" ng-model="nouvelEleve.nom" placeholder="Entrez votre nom..." />
+            <input type="text" ng-model="nouvelEleve.prenom" placeholder="Entrez votre prénom..." />
+            <input type="text" ng-model="nouvelEleve.age" placeholder="Entrez votre âge..." />
+            <input type="submit" value="ajouter"/>
+        </form>
+        
+        <br/>
+        <hi>liste des élèves :</hi>
+        
+        <ul>
+            <!-- TODO : code pour afficher les élèves de listeEleves -->
+            <li>Charles Edouard (21 ans) <input type="submit" value="x"/></li>
+        </ul>
+    </div>
+  </body>
+</html>
